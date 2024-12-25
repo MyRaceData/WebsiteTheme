@@ -1,3 +1,8 @@
+$bg: url(dark-light-choose($bg-light, $bg-dark));
+
+:root {
+  --custom-bg: #{$bg};
+}
 body {
     background-image: linear-gradient(to top, white, 90%, transparent), url(var(--custom-bg));
     background-repeat: repeat-y;
